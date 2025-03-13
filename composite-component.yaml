@@ -1,0 +1,14 @@
+# Example of a composite component that references other OCM components
+name: ocm.software/demos/composite-component
+provider:
+  name: ocm.software
+version: 1.0.0
+
+# References to other OCM components
+componentReferences:
+  - name: podinfo
+    componentName: ocm.software/demos/capacitor
+    version: 6.8.0
+  - name: capacitor
+    componentName: ocm.software/demos/capacitor
+    version: 0.4.8

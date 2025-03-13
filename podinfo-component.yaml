@@ -1,6 +1,8 @@
+# Example of a simple OCM component
 name: ocm.software/demos/podinfo
 provider:
   name: ocm.software
+version: 6.8.0
   
 resources:
   # Podinfo Docker image
@@ -18,9 +20,3 @@ resources:
     access:
       imageReference: ghcr.io/stefanprodan/charts/podinfo:6.8.0
       type: ociArtifact
-
-# References to other OCM components
-componentReferences:
-  - name: capacitor
-    componentName: ocm.software/demos/capacitor
-    version: 0.4.8
