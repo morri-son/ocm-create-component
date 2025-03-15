@@ -2,9 +2,9 @@
 
 This repository contains basic demo scenarios for the [Open Component Model (OCM)](https://ocm.software) and describes basic actions around actions with OCM components. It describes an action sequence from creating, over signing and lastly transferring OCM components to their target registry.
 
-These actions are used to create a so-called `tape` file that can be used to record a terminal session used to execute the scenario. A tape file contains the code describing the recording and can be used with [VHS](https://github.com/charmbracelet/vhs). The repo also contrains a demo tape file and a rendered version of the tape file in GIF and MP4 format.
+These actions are used to create a so-called `tape` file that can be used to record a terminal session used to execute the scenario. A tape file contains the code describing the recording and can be used with [VHS](https://github.com/charmbracelet/vhs). The repo also contrains a [demo tape file](demo.tape) and a rendered version of the tape file in GIF and MP4 format.
 
-The demo scenario consists of:
+The demo scenario consists of the following actions that are listed and explained in [this file](demo-script.md):
 
 - Creating podinfo component from a constructor file
 - Storing component in a local CTF archive
