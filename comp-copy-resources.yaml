@@ -1,0 +1,52 @@
+---
+component:
+  componentReferences: []
+  creationTime: "2025-03-17T18:38:55Z"
+  name: ocm.software/demos/podinfo
+  provider: ocm.software
+  repositoryContexts:
+  - baseUrl: ghcr.io
+    componentNameMapping: urlPath
+    subPath: open-component-model
+    type: OCIRegistry
+  - baseUrl: europe-west4-docker.pkg.dev
+    componentNameMapping: urlPath
+    subPath: sap-cp-k8s-ocm-gcp-eu30-dev/ocm
+    type: OCIRegistry
+  resources:
+  - access:
+      imageReference: europe-west4-docker.pkg.dev/sap-cp-k8s-ocm-gcp-eu30-dev/ocm/stefanprodan/podinfo:6.8.0@sha256:6c1975b871efb327528c84d46d38e6dd7906eecee6402bc270eeb7f1b1a506df
+      type: ociArtifact
+    digest:
+      hashAlgorithm: SHA-256
+      normalisationAlgorithm: ociArtifactDigest/v1
+      value: 6c1975b871efb327528c84d46d38e6dd7906eecee6402bc270eeb7f1b1a506df
+    name: image
+    relation: external
+    type: ociImage
+    version: 6.8.0
+  - access:
+      imageReference: europe-west4-docker.pkg.dev/sap-cp-k8s-ocm-gcp-eu30-dev/ocm/stefanprodan/charts/podinfo:6.8.0@sha256:2360bdf32ddc50c05f8e128118173343b0a012a338daf145b16e0da9c80081a4
+      type: ociArtifact
+    digest:
+      hashAlgorithm: SHA-256
+      normalisationAlgorithm: ociArtifactDigest/v1
+      value: 2360bdf32ddc50c05f8e128118173343b0a012a338daf145b16e0da9c80081a4
+    name: chart
+    relation: external
+    type: helmChart
+    version: 6.8.0
+  sources: []
+  version: 6.8.0
+meta:
+  schemaVersion: v2
+signatures:
+- digest:
+    hashAlgorithm: SHA-256
+    normalisationAlgorithm: jsonNormalisation/v3
+    value: a0ae48ea0c52bc49225afef6f4e32164d0378ebcb4257dd88c54000a15aa0020
+  name: my-ocm
+  signature:
+    algorithm: RSASSA-PKCS1-V1_5
+    mediaType: application/vnd.ocm.signature.rsa
+    value: 4104fafb3d17c9bcf4803f7669a66fb1065c2c3fb1c62a23709367d44d808794260c17626cbb2da41d4707cd1e02706cbcfb01775667680569744bc3d20062b75cbc0bff47edd00f334a50f5ed6e1fdfe00dc3f8f1f605645c9c7b050e97ece1596af5b8bf05b9280f7a8c216735208584d4a888385df5f772517b393c1da83153fb39d4d9b8496241c92f04458a0dbb6f294d9cfd8e1cc1d0d36837e045832ca51f2f28933a834747500b1cd890deb45aa2fadf39d09ba3d9d1b543d113b8cee2194575c76dfba7fa2bdc2bff0d4eb9cdec2fb9b0699d4c17bd5ef2e26778917122663f38f3fcf4ba9b3e33beb636a14655d873ae06fb287f6c7caee0cfc60d
