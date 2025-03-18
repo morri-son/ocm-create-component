@@ -7,7 +7,7 @@ Set Width 2200
 Set Height 1300
 Set WindowBar Colorful
 Set TypingSpeed 60ms
-Set PlaybackSpeed 0.6
+Set PlaybackSpeed 1.86
 
 # Setting correct prompt
 Env PROMPT "$ "
@@ -93,11 +93,11 @@ Type "##### RESOURCES are transferred ALONG WITH the OCM component (--copy-resou
 Enter 3
 Type "ocm transfer componentversion --copy-resources ghcr.io/open-component-model//ocm.software/demos/podinfo:6.8.0 europe-west4-docker.pkg.dev/sap-cp-k8s-ocm-gcp-eu30-dev/ocm" Sleep 2s Enter 
 Sleep 2
-Wait+Screen@45s /resource 0/
+Wait+Screen@90s /resource 0/
 Sleep 500ms
-Wait+Screen@45s /resource 1/
+Wait+Screen@90s /resource 1/
 Sleep 1
-Wait+Screen@45s /transferred/
+Wait+Screen@90s /transferred/
 Sleep 10
 Ctrl+L
 
@@ -111,5 +111,5 @@ Enter
 Type "ocm get componentversion europe-west4-docker.pkg.dev/sap-cp-k8s-ocm-gcp-eu30-dev/ocm//ocm.software/demos/podinfo:6.8.0 -oyaml > comp-copy-resources.yaml" Sleep 2 Enter
 Sleep 2
 Enter
-Type "git diff --no-index comp-NO-copy-resources.yaml comp-copy-resources.yaml" Sleep 1 Enter
+Type "git --no-pager diff --no-index comp-NO-copy-resources.yaml comp-copy-resources.yaml" Sleep 1 Enter
 Sleep 10
