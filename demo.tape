@@ -6,7 +6,7 @@ Set FontSize 16
 Set Width 2200
 Set Height 1300
 Set WindowBar Colorful
-Set TypingSpeed 70ms
+Set TypingSpeed 60ms
 Set PlaybackSpeed 0.6
 
 # Setting correct prompt
@@ -111,5 +111,5 @@ Enter
 Type "ocm get componentversion europe-west4-docker.pkg.dev/sap-cp-k8s-ocm-gcp-eu30-dev/ocm//ocm.software/demos/podinfo:6.8.0 -oyaml > comp-copy-resources.yaml" Sleep 2 Enter
 Sleep 2
 Enter
-Type "colordiff comp-NO-copy-resources.yaml comp-copy-resources.yaml" Sleep 1 Enter
+Type "git diff --no-index comp-NO-copy-resources.yaml comp-copy-resources.yaml" Sleep 1 Enter
 Sleep 10
